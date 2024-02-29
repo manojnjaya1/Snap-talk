@@ -1,0 +1,50 @@
+.emoji-input-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    position: relative;
+}
+
+.input-groupName {
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid var(--grey-4); /* Underline effect */
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+  }
+  
+ .input-groupName:hover {
+    border-bottom-color: var(--grey-5); /* Hover effect */
+  }
+  
+  .input-groupName:focus {
+    border-bottom-color: var(--primary); /* Active effect */
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    outline: none;
+  }
+  
+  button:hover {
+    color: var(--primary); /* Hover effect */
+  }
+  
+
+  .emojis{
+    display: flex;
+    gap: 0.3em;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+  }
+  .emojis span{
+    font-size: 2em;
+    cursor: pointer;
+  }

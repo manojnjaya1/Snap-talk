@@ -1,0 +1,14 @@
+.blank-container{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    font-weight: bold;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .blank-container{
+        display: none;
+    }
+}

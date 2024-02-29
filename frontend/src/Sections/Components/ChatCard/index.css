@@ -1,0 +1,89 @@
+/* Base styles for the profile card */
+.profile-cards {
+  width: 95%;
+  margin: auto;
+  padding: 0.9em 0em;
+  /* height: 16.5%; */
+  display: flex;
+  border-radius: 1.5em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* box-sizing: border-box; */
+}
+
+.hovering:hover{
+  background-color: var(--grey-1);
+  /* border-top: 2px solid red;
+  border-bottom: 2px solid red; */
+}
+.hovering:active{
+  background-color: var(--grey-2);
+  /* border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; */
+}
+.active-holder{
+  background-color: var(--grey-3);
+  background-color: var(--primary-light);
+}
+
+.profile-images{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-details{
+  margin-left: 1em;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.upper-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-details .username{
+  font-weight: bold;
+  /* font-size: 18px; */
+  font-size: 1.13em;
+}
+.profile-details .timestamp{
+  font-size: 0.75em;
+  color: var(--grey-5);
+}
+
+.lower-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-row .bio{
+  font-size: 0.86em;
+  color: var(--grey-5);
+}
+
+.badge-container{
+  font-size: 20px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+.badge-container svg{
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 679px) {
+  .profile-details{
+    margin-left: 0.5em;
+  }
+}

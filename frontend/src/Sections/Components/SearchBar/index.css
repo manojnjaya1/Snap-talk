@@ -1,0 +1,56 @@
+/* Add font-awesome for the search icon */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+/* Style for the search container */
+.search-container {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1em;
+  overflow: hidden; /* Ensure no overflow from child elements */
+  background-color: var(--grey-1); /* Transparent background */
+  transition: background-color 0.3s ease;
+  padding: 0.88em 1.2em;
+  /* border: 2px solid red; */
+}
+
+/* Style for the search input */
+.search-input {
+  flex-grow: 1; 
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: transparent; 
+  /* border: 2px solid red; */
+  /* max-width: 80%; */
+}
+
+/* Style for the search button */
+.search-button {
+  width: 1.4em;
+  margin-left: 0.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--grey-4) !important;
+  /* border: 2px solid red; */
+}
+
+/* Hover effect for the search button */
+.search-container:hover,
+.search-container:active {
+  background-color: #f1f1f1;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 679px) {
+  .search-container{
+    padding: 0.88em 1em;
+  }
+  .search-input{
+    width: 90%;
+  }
+  .search-button {
+    width: 1.2em;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "snap_talk",
+  "version": "1.0.0",
+  "description": "Snap Talk is a cutting-edge chat application that redefines the way you connect and communicate. With its intuitive interface, expressive features, and robust security, Snap Talk offers a dynamic platform for seamless conversations and vibrant interactions. Elevate your messaging experience with Snap Talk - where every chat becomes a captivating journey.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Md Arish",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "socket.io": "^4.1.2"
+  }
+}

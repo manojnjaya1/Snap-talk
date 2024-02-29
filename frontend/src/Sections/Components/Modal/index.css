@@ -1,0 +1,143 @@
+.modals-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modals {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  /* padding: 20px; */
+  border-radius: 16px;
+  /* padding-bottom: 1em; */
+  animation: zoomIn 0.3s forwards;
+}
+
+.modals {
+  width: 30%;
+  height: 70%;
+  padding: 2em 0em;
+  /* border: 2px solid red; */
+}
+@media only screen and (max-height: 500px) {
+  .modals {
+    height: 90%;
+  }
+}
+.modals-header {
+  border-bottom: 2px solid var(--grey-3);
+  padding: 0 1em;
+  padding-bottom: 1em;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 0.5em; */
+}
+.modals-header .close-btn {
+  cursor: pointer;
+}
+.modals-header .headline {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modals-content {
+  display: flex;
+  flex-direction: column;
+}
+.modals-content .search-bar {
+  /* border: 2px solid red; */
+  /* margin: 0;
+  padding: 0; */
+}
+
+.modals-content .groupchat-creater-profile-container {
+  /* border: 2px solid palevioletred; */
+  margin-top: 0.5em;
+  /* padding-bottom: 1em; */
+  /* border: 2px solid red; */
+  /* height: 5em; */
+}
+.modals-content .groupchat-creater-profile-container .profile-cards {
+  /* border: 2px solid green; */
+  /* border: 2px solid red; */
+  height: 5em;
+}
+
+.modals-content .gc-search-bar {
+  /* border: 2px solid blue; */
+  height: fit-content;
+  /* border: 2px solid red; */
+  /* margin-bottom: 1em; */
+  justify-content: flex-end;
+}
+
+.confirm-btn {
+  position: absolute;
+  right: 1.8em;
+  bottom: 1.8em;
+  padding: 0.5em;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+.confirm-btn svg {
+  font-size: 2.5em;
+}
+.confirm-btn:hover {
+  background-color: rgb(78, 42, 255);
+}
+.confirm-btn:active {
+  background-color: #6a4dff;
+  background-color: var(--primary);
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .modals {
+    width: 40%;
+    height: 70%;
+    padding: 2em 0em;
+    /* border: 2px solid red; */
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
+  .modals {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 679px) {
+  .modals {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .modals {
+    width: 95%;
+    height: 60%;
+  }
+}
+
+

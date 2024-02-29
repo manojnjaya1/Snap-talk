@@ -1,0 +1,43 @@
+* {
+}
+.login-body {
+  height: 100vh;
+}
+
+.login-container {
+  width: max(340px, 40%);
+  padding: 4em 3em;
+  border-radius: 2em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header {
+  font-weight: bolder;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+.links-container span {
+  font-size: smaller;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .login-container {
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .login-container {
+    width: 28%;
+  }
+}

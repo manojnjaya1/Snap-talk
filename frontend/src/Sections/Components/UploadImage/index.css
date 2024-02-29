@@ -1,0 +1,25 @@
+.upload-docs{
+    background-color: var(--grey-3);
+    /* border: 1px dotted var(--grey-5); */
+    height: 10em;
+    width: 10em;
+}
+.upload-docs-lb{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 0.6em; */
+    height: 100%;
+    gap: 0.4em;
+    text-align: center;
+    /* padding: 3em; */
+    font-weight: bold;
+}
+.upload-docs-lb svg{
+    font-size: 2em;
+}
+.upload-docs-input{
+    display: none;
+}
